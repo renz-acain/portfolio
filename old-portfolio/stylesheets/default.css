@@ -1,0 +1,32 @@
+#banner {
+	background-color:#4C4C4C;
+	color:#F5F5F5;
+}
+
+#banner h1{
+	color:#F5F5F5;
+}
+
+#banner p {
+	font-size:18px;
+}
+
+
+
+.space {
+	margin-top:20px;
+}
+
+.pd {
+	padding:10px;
+}
+
+[data-clearing] li {
+
+  margin-right: 0px;
+}
+
+
+/* #carImages li {
+	padding:5px;
+}	 */

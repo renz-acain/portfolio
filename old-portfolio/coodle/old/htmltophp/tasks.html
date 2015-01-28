@@ -1,0 +1,126 @@
+<?php
+#start session
+session_start();
+
+#authentication check
+require_once("includes/auth.check.inc.php");
+
+#load the user class
+require_once("../library/user.class.php");
+
+if(isset($_SESSION['coodle']['userHandle']))
+{
+	$userHandle = unserialize($_SESSION['coodle']['userHandle']);
+}
+#define base URL
+define("__BASE_URL__","../");
+
+#include connection to db
+include_once("../includes/db.connect.inc.php");
+?>
+
+
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="../imgs/logo-small.png" type="image/png" />
+  <link rel="stylesheet" href="../stylesheets/app.css">
+  <link rel="stylesheet" href="../stylesheets/default.css">
+  <script src="../javascripts/vendor/custom.modernizr.js"></script>
+  
+   <title>Coodle - Assigning tasks</title>
+
+</head>
+<body>
+	
+	<!-- Start of nav bar -->
+		<?php include("includes/nav.inc.php"); ?>
+	<!-- End of nav -->
+	<div class="row">
+	
+	
+	<h1>Assign Tasks</h1>
+		<div class="small-6 columns">
+		
+		
+		
+		
+		</div>
+		
+		<div class="small-6 columns">
+		
+		
+		
+		
+		</div>
+	</div>
+	
+	
+	
+	
+	<!-- Footer -->	  
+	<footer class="row">
+	    <div class="large-12 columns">
+	      <hr />
+	      <div class="row">
+		<div class="small-12 large-6 columns">
+		<ul class="inline-list">
+		  <li>&copy; Copyright  2013</li>
+		  <li><a href="#">Sitemap</a></li>
+		</ul>
+	        </div>
+	      </div>
+	    </div> 
+	</footer>
+	<!-- end of Footer -->
+	
+	
+<!-- list of javascripts -->
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? '../javascripts/vendor/zepto' : '../javascripts/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="../javascripts/foundation/foundation.js"></script>
+	
+	<script src="../javascripts/foundation/foundation.abide.js"></script>
+	
+	<script src="../javascripts/foundation/foundation.alerts.js"></script>
+	
+	<script src="../javascripts/foundation/foundation.clearing.js"></script>
+	
+	<script src="../javascripts/foundation/foundation.cookie.js"></script>
+	
+	<script src="../javascripts/foundation/foundation.dropdown.js"></script>
+	
+	<script src="../javascripts/foundation/foundation.forms.js"></script>
+	
+	<script src="../javascripts/foundation/foundation.interchange.js"></script>
+	
+	<script src="../javascripts/foundation/foundation.joyride.js"></script>
+	
+	<script src="../javascripts/foundation/foundation.magellan.js"></script>
+	
+	<script src="../javascripts/foundation/foundation.orbit.js"></script>
+	
+	<script src="../javascripts/foundation/foundation.placeholder.js"></script>
+	
+	<script src="../javascripts/foundation/foundation.reveal.js"></script>
+	
+	<script src="../javascripts/foundation/foundation.section.js"></script>
+	
+	<script src="../javascripts/foundation/foundation.tooltips.js"></script>
+	
+	<script src="../javascripts/foundation/foundation.topbar.js"></script>
+	
+  
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+D - grade
+	products.php - navigation through categories of products
+	product.php - display a particular product in a detail view 
+	addtocart.php - a shopping cart feature 
+	payment.php - check process able to handle test card numbers 
+	delivery.php - get details of the product purchased with the name, delivery and billing address of the customer 
+	purchaseDetails.php - time of purchase, amount paid and the test credit card number which pass the Luhn check
+
+C - grade
+	Allow editing the shopping cart. All functionality below are included in 
+	addtocart.php
+	- Change quantities
+	- Delete items	
+	- Continue shopping later (implemented in session)
+	- Change colours - ADDED
+	
+B - grade
+	User management features.
+	register.php - create user accounts including their address
+	user.php - after registration, the user will be redirected to user.php
+		 - registered users can preview their previous orders
+		 - shows their delivery address
+	addressChange.php - allow users to edit delivery address - ADDED
+
+A - grade
+	Admin - email address is: renz@isherwoodatheletics.co.uk  pass: RANDOMpass1234
+		
+		addproduct.php - allow admin to add an item
+		admin.php - allow admin to edit stock
+			  - allow admin to change order status
+			  - allow admin to delete users
+	
+	Leave feedback on an item
+		product.php - allow registered members to comment
+			    - allow registered members to rate
+
+	Recently viewed
+		product.php - List the 5 items that was recently viewed
+
+	Encode GET parameters 
+		 
+	Made the checkout.php, delivery.php, payment.php and purchaseDetails.php unaccessible using the URL
+
+	

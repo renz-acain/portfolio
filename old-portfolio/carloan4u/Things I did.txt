@@ -1,0 +1,16 @@
+1. Change the PSD to HTML using Bootstrap
+2. Remove the mouse from the first image of Related items
+3. The type of item, which is the COAT, of first item is positioned below the name of item.
+4. Change the Social Icons to SVG using fontello
+5. Use JPEG images since there are no transparency used
+6. Added a dotted line to split the body into two section
+
+Improvements
+1. Add the Login/Register button at the top-right
+2. Add a Shopping Cart button
+
+Bad things I did:
+- Used a navbar of Bootstrap for the top navigation (should've made a normal button and paragraph)
+
+Why I used Bootstrap
+- I'm not really an expert in Bootstrap but recently, I've been trying to learn more about Bootstrap and thought this is a good chance to practice it.

@@ -1,0 +1,19 @@
+products.php - encode and decode the GET parameter of categoryId, and productId and occId for the product page
+	     - if user try to change the value of categoryId in the URL and guessed wrong, redirect to products.php
+
+product.php - decode the GET parameter
+	    - if user try to change the value of productId and occId in the URL and guessed wrong, redirect to products.php
+	    - used mysqli_real_escape_string on the feedback's input box to avoid sql injection
+		- if stock is 0, do not allow user to add the item to cart
+
+
+
+user.php    - if user tried to go to user.php even if they are not logged in, it will show "Registered members only"
+	    - 
+
+checkout.php - if users tried to checkout using the URL, go back to addtocart.php
+	     - only accessible by clicking the Check out button in addtocart.php	
+
+delivery.php 	- if users try to illegally go to delivery using URL, return to checkout.php (which is only accessible by clicking the check 		  out button	
+		
+
